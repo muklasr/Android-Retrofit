@@ -10,7 +10,7 @@ interface ApiInterface {
     fun getMovies(): Call<List<Movie>>
 
     companion object {
-        var BASE_URL = "http://35.200.174.74/apis/"
+        var BASE_URL = "https://muklas.com/api/movie"
         fun create(): ApiInterface {
             val retrofit = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
